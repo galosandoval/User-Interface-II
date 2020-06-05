@@ -1,1 +1,148 @@
-/* Add CSS styling here */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    /* border: 1px solid grey; */
+    font-family: 'Manrope', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 6rem;
+    color: #b666d2;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #483C32;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #483C32;
+}
+
+.container h3 {
+    background-color:#ff7f50;
+    color: #483C32;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+#header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    font-size: 1.6rem;
+    color: #483C32;
+}
+
+#header nav a {
+    text-decoration: none;
+    border: 2px solid #5aebad;
+    padding: 2px 3px 2px 3px;
+    color: #483C32;
+    
+}
+
+a.special-button {
+    background-color: #ff7f50;
+    color: #483C32;
+}
+
+#projects {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: .5%;
+}
+
+.container {
+    position: relative;
+}
+
+.container-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+}
+
+#projects img {
+    height: 90vh;
+    position: relative;
+}
+.project-heading {
+    position; absolute;
+    transform: translate(-50% -50%);
+}
+
+#gallery h3 a { 
+    text-decoration: none;
+    color: #483C32;
+}
+
+.top-gallery {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: flex-end;
+    padding: 1% .5% 1% .5%
+}
+
+.top-three {
+    width: 30%;
+    text-align: center;
+    object-fit: cover;
+}
+
+.top-gallery img {
+    height: 280px;
+    object-fit: cover;
+}
+
+.bottom-gallery {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: flex-end;
+    padding: 1% .5% 1% .5%;
+}
+
+.bottom-three {
+  width: 30%;
+  text-align: center;
+}
+
+.bottom-gallery img {
+    height: 280px;
+    object-fit: cover;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background-color: #5aebad;
+
+}
+#footer a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color:#483C32;
+    background-color: #ff7f50;
+    padding: .7%;
+    border-radius: 8px;
+}
