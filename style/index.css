@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     max-width: 100%;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     font-family: 'Manrope', sans-serif;
 }
 
@@ -18,20 +18,23 @@ h1 {
 
 h2 {
     font-size: 2rem;
+    color: #483C32;
 }
 
 h3 {
-    font-size: 1.8 rem;
+    font-size: 1.5rem;
+    color: #483C32;
 }
 
 .container h3 {
     background-color:#ff7f50;
-    color: blanchedalmond;
+    color: #483C32;
 }
 
 #header {
     display: flex;
     justify-content: space-between;
+    padding: 1%;
 }
 
 #header nav {
@@ -39,19 +42,20 @@ h3 {
     justify-content: space-around;
     width: 30%;
     font-size: 1.6rem;
-    color: #b666d2;
+    color: #483C32;
 }
 
 #header nav a {
     text-decoration: none;
     border: 2px solid #5aebad;
     padding: 2px 3px 2px 3px;
+    color: #483C32;
     
 }
 
 a.special-button {
     background-color: #ff7f50;
-    color: blanchedalmond;
+    color: #483C32;
 }
 
 #projects {
@@ -60,6 +64,7 @@ a.special-button {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: .5%;
 }
 
 .container {
@@ -72,17 +77,20 @@ a.special-button {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.5rem;
-
 }
 
 #projects img {
     height: 90vh;
     position: relative;
-    border: 1px solid green;
 }
 .project-heading {
     position; absolute;
     transform: translate(-50% -50%);
+}
+
+#gallery h3 a { 
+    text-decoration: none;
+    color: #483C32;
 }
 
 .top-gallery {
@@ -133,7 +141,7 @@ a.special-button {
 #footer a {
     font-size: 1.5rem;
     text-decoration: none;
-    color: blanchedalmond;
+    color:#483C32;
     background-color: #ff7f50;
     padding: .7%;
     border-radius: 8px;
