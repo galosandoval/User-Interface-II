@@ -3,12 +3,15 @@
     margin: 0;
     padding: 0;
     max-width: 100%;
-    /* border: 1px solid grey; */
-    font-family: 'Manrope', sans-serif;
+    border: 1px solid grey;
 }
 
 html {
     font-size: 62.5%;
+}
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.6rem;
 }
 
 h1 {
@@ -17,12 +20,11 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #483C32;
 }
 
 h3 {
-    font-size: 1.5rem;
     color: #483C32;
 }
 
@@ -40,8 +42,8 @@ h3 {
 #header nav {
     display: flex;
     justify-content: space-around;
-    width: 30%;
-    font-size: 1.6rem;
+    width: 50%;
+    font-size: 2.5rem;
     color: #483C32;
 }
 
@@ -49,11 +51,10 @@ h3 {
     text-decoration: none;
     border: 2px solid #5aebad;
     padding: 2px 3px 2px 3px;
-    color: #483C32;
-    
+    color: #483C32;    
 }
 
-a.special-button {
+#header nav a:hover {
     background-color: #ff7f50;
     color: #483C32;
 }
@@ -76,7 +77,6 @@ a.special-button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.5rem;
 }
 
 #projects img {
@@ -136,8 +136,8 @@ a.special-button {
     align-items: center;
     height: 15vh;
     background-color: #5aebad;
-
 }
+
 #footer a {
     font-size: 1.5rem;
     text-decoration: none;
@@ -145,4 +145,49 @@ a.special-button {
     background-color: #ff7f50;
     padding: .7%;
     border-radius: 8px;
+}
+
+@media(max-width: 800px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        display: flex;
+        width: 100%;
+    }
+    a {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+    }
+    .container-text {
+        width: 60%;
+    }
+    #gallery {
+        display: flex;
+    }
+    .top-gallery {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .bottom-gallery {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    .top-three {
+        width: 100%;
+    }
+    .bottom-three {
+        width: 100%;
+    }
+    h3 a {
+        width: 100%;
+    }
+    #footer a {
+        font-size: 2.2rem;
+    }
+
 }
