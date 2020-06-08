@@ -26,6 +26,7 @@ h2 {
 
 h3 {
     color: #483C32;
+    font-size: 2rem;
 }
 
 .container h3 {
@@ -135,12 +136,14 @@ h3 {
 }
 
 #footer a {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-decoration: none;
     color:#483C32;
     background-color: #ff7f50;
     padding: .7%;
     border-radius: 8px;
+    width: 20%;
+    text-align: center;
 }
 
 @media(max-width: 800px) {
@@ -179,17 +182,17 @@ h3 {
         flex-direction: column;
         width: 50%;
     }
-    .top-three {
+    .top-three, .bottom-three {
         width: 100%;
-    }
-    .bottom-three {
-        width: 100%;
+        padding: 2% 0;
     }
     h3 a {
         width: 100%;
     }
     #footer a {
         font-size: 2.2rem;
+        width: 35%;
+        padding: 2%;
     }
     #projects img {
         object-fit: cover;
@@ -207,4 +210,10 @@ h3 {
     .top-three, .bottom-three {
         padding: 6% 0;
     }
+}
+
+@media(max-width: 360px) {
+    .container-text {
+        width: 80%;
+    } 
 }
